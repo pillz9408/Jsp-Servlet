@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+	줄수입력:  <input type="text" name="num" placeholder = "숫자입력">
+	<br><input type="submit" value ="Send"></br>
+</form>
+</body>
+</html>

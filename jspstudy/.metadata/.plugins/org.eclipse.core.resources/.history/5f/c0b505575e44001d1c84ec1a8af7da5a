@@ -1,0 +1,60 @@
+package servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class UserInfo2
+ */
+@WebServlet("/userinfo2")
+public class UserInfo2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		//데이터 인코딩
+		request.setCharacterEncoding("UTF-8");
+		//데이터 가져오기
+		String name = request.getParameter("name");
+		int age = Integer.parseInt(request.getParameter("age"));
+		String gender = request.getParameter("gender");
+		String food[]= request.getParameterValues("food");
+		String inter[] = request.getParameterValues("interest");
+		//출력 문자열 인코딩방식 지정
+		response.setContentType("text/html; charset=UTF-8");
+		//출력스트림 가져오기
+		PrintWriter out = response.getWriter();
+		//HTML작성, 로직 처리
+		out.print("<body>");
+		out.print("이름: " + name +"<br>");
+		out.print("나이: " + age +"<br>");
+		out.print("성별: " + gender +"<br>");
+		for(String a : food) {
+			out.print("좋아하는 음식: "+ a + " ");
+		}
+		for(String b : inter) {
+			out.print("관심분야: " + b +" ");
+		}
+		
+		out.print("</body>");
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>plus1to100</title>
+</head>
+<body>
+<% 
+	//1부터 100까지 합을 구하여 화면에 출력하기
+	int n =0;
+	for(int i=0; i<=100; i++){
+		n= n+i;
+	}
+	out.print("1부터 100까지의 합"+ n);
+%>
+
+</body>
+</html>

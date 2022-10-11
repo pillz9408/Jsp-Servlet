@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gugugu</title>
+</head>
+<body>
+<form action="gugu">
+	색상선택 <input type="color" name="color">
+	<input type="text" name="num1" placeholder = "숫자입력1">
+	에서
+	<input type="text" name="num2" placeholder = "숫자입력2">
+	까지의 구구단을 출력.
+	<input type="submit" value ="Send">
+</form>
+</body>
+</html>

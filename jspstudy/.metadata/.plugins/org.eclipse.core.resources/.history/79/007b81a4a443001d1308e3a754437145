@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<input type=text name="data" value="1" placeholder = "숫자입력"><br>
+	<input type="submit" value="send">
+
+</form>
+
+</body>
+</html>

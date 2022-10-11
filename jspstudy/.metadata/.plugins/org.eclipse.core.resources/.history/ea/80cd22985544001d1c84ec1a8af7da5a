@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+	<b>직업</b><select name='job'>
+		<option value="프리랜서">
+		<option value="학생">
+		<option value="군인">
+		<option value="직장인">
+		<option value="주부">
+	</select><br>
+	<b>성별</b><input type="radio"name="gender" value="male">남자
+	<input type="radio"name="gender" value="female">여자<br>
+	<b>취미</b><input type="checkbox"name="hobby">축구
+	<input type="checkbox"name="hobby">농구
+	<input type="checkbox"name="hobby">게임
+	<input type="checkbox"name="hobby">음악감상
+	<input type="checkbox"name="hobby">영화감상
+	
+	</form>
+
+
+</body>
+</html>

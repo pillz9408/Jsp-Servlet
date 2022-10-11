@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table</title>
+</head>
+<body>
+<table border>
+<tr> <!-- 행표시 태그 -->
+	<td>1</td><!-- 열표시 태그:데이터 표기 -->
+	<td>2</td>
+	<td>3</td>
+	<td>4</td>
+	<td>5</td>
+	<td>6</td>
+</table>
+</body>
+</html>
